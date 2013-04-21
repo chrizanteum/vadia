@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ object.name }}</h1>
+
+    <ul>
+        {% for motherboard in motherboards %}
+            <li><a href="{% url motherboard_url motherboard.id %}">{{ motherboard.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

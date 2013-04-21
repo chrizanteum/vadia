@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ object.name }}</h1>
+
+
+    {% for cpu_group in cpus %}
+        <ul>
+            {% for cpu in cpu_group %}
+                <li><a href="{% url cpu_url cpu.id %}">{{ cpu.name }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+{% endblock %}

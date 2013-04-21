@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>YOBA APP</h1>
+
+    <ul>
+        <li><a href="{% url motherboards_url %}">motherboards</a></li>
+        <li><a href="{% url cpus_url %}">cpu</a></li>
+    </ul>
+{% endblock %}

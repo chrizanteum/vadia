@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Motherboard list</h1>
+
+    <ul>
+        {% for motherboard in object_list %}
+            <li>
+                <div>
+                    <a href="{% url motherboard_url motherboard.id %}">{{ motherboard.name }}</a>
+
+                    <ul>
+                        <li>ram: {{ motherboard.ram }}</li>
+                        <li>usb: {{ motherboard.usb }}</li>
+                        <li>socket:
+                            <ul>
+                                {%  for socket in motherboard.socket.all %}
+                                    <li>{{ socket.socket }}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li>connectors number: {{ motherboard.connectors_number }}</li>
+                    </ul>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
