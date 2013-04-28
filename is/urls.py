@@ -1,6 +1,6 @@
 from django.views.generic.base import TemplateView
 from django.conf.urls import patterns, include, url
-from staticfiles.urls import staticfiles_urlpatterns
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from cpu.views import CpusView, CpuView
 import settings
 
