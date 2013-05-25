@@ -19,6 +19,9 @@ urlpatterns = patterns('',
 
     url(r'^cpu/$', CpusView.as_view(), name='cpus_url'),
     url(r'^cpu/(?P<pk>\d+)/$', CpuView.as_view(), name='cpu_url'),
+
+    url(r'^gpu/$', CpusView.as_view(), name='gpus_url'),
+    url(r'^gpu/(?P<pk>\d+)/$', CpuView.as_view(), name='gpu_url'),
     # url(r'^is/', include('is.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
