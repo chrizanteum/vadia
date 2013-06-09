@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h3>PC Building</h3>
+    <h1>PC Building</h1>
 
     <ul>
         <li><a href="{% url motherboards_url %}">motherboards</a></li>
         <li><a href="{% url cpus_url %}">cpu</a></li>
+        <li><a href="{% url cpus_url %}">gpu</a></li>
     </ul>
 {% endblock %}

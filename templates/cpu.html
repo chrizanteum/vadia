@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{{ object.name }}</h1>
+    <h4>{{ object.name }}</h4>
+    <div>{{ object.description }}</div>
 
     <ul>
         {% for motherboard in motherboards %}
             <li><a href="{% url motherboard_url motherboard.id %}">{{ motherboard.name }}</a></li>
         {% endfor %}
     </ul>
+
+    <a href="" class="btn add" data-type='cpu' data-id='{{ object.id }}'>select</a>
 {% endblock %}

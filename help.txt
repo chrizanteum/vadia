@@ -1,0 +1,7 @@
+add new field to model
+	edit model
+	set default values	
+	>> python manage.py schemamigration appname --auto
+	>> python manage.py migrate
+
+	edit template

@@ -21,7 +21,6 @@ class Motherboard(models.Model):
     connectors_number = models.IntegerField()
     usb = models.OneToOneField(to=Usb)
     socket = models.ManyToManyField(to=Socket)
-    price = models.IntegerField(default=0)
-    description = models.TextField(default='')
+
     def __unicode__(self):
         return self.name

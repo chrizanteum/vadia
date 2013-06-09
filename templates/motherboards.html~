@@ -20,7 +20,6 @@
                             </ul>
                         </li>
                         <li>connectors number: {{ motherboard.connectors_number }}</li>
-                        <li>price: {{ motherboard.price }}</li> 
                     </ul>
                 </div>
             </li>

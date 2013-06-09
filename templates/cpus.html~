@@ -13,7 +13,6 @@
                         <li>frequency: {{ cpu.frequency }}</li>
                         <li>socket: {{ cpu.socket }}</li>
                         <li>cores: {{ cpu.cores }}</li>
-                        <li>price: {{ cpu.price }}</li>
 			{#cores: {{ cpu.core_number}}#}
                     </ul>
                 </div>

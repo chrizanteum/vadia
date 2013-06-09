@@ -5,6 +5,7 @@
 <head>
     <title></title>
     <link rel="stylesheet" href="{{ STATIC_PREFIX }}css/bootstrap.css">
+    <script src="{{ STATIC_PREFIX }}js/jq.js"></script>
 
     <style type="text/css">
         div.container > ul {
@@ -19,6 +20,16 @@
             background-color: #efefef;
         }
     </style>
+
+    <script>
+      (function($){
+	$(function(){
+	  $('a.add').on('click', function(e){
+		e.preventDefault();
+	  };	
+	});
+      })(jQuery)
+    </script>
 </head>
 <body>
 <nav></nav>
